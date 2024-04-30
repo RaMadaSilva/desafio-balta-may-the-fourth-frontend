@@ -5,13 +5,13 @@ using MyTheFourth.Frontend.Services.Interfaces;
 
 namespace MyTheFourth.Frontend.GalactImpareContext.Services;
 
-public class MyTheFourthHttpService :
+public class GalactImpareMyTheFourthHttpService :
 IMyTheFourthService
 {
     private readonly HttpClient _client;
     private readonly IMapper _mapper;
 
-    public MyTheFourthHttpService(HttpClient client, IMapper mapper)
+    public GalactImpareMyTheFourthHttpService(HttpClient client, IMapper mapper)
     {
         _client = client;
         _mapper = mapper;

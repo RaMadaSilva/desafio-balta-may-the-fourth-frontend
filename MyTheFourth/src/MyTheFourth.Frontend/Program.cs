@@ -24,7 +24,7 @@ builder.Services.AddTransient<MyTheFourthHttpServiceFake2>();
 
 builder.AddBackendProviders(assemblies: Assembly.GetExecutingAssembly())
        .AddApi<DevResistence.Services.MyTheFourthHttpService>(BackendServicesIdentifiers.DevResistence)
-       .AddApi<GalactImpare.Services.MyTheFourthHttpService>(BackendServicesIdentifiers.GalactImpare);
+       .AddApi<GalactImpare.Services.GalactImpareMyTheFourthHttpService>(BackendServicesIdentifiers.GalactImpare);
 
 builder.Services.AddBlazoredLocalStorage(config =>
 {
