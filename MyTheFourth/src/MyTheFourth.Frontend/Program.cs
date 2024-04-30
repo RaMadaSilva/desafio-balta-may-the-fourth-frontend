@@ -52,6 +52,9 @@ builder.Services.AddBlazoredLocalStorage();
 
 builder.Services.AddBlazorBootstrap();
 
+builder.Services.AddSingleton<IBreadcrumbItemService, BreadcrumbItemService>();
+builder.Services.AddSingleton<IBreadcrumbItemServiceEvents>(provider => provider.GetRequiredService<IBreadcrumbItemService>());
+
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 await builder.Build().RunAsync();
