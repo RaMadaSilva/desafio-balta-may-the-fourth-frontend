@@ -1,0 +1,8 @@
+﻿namespace MyTheFourth.Frontend.GalactImpareContext.Models
+{
+    public class ListInfoModel
+    {
+        public int Id { get; set; }
+        public string Title { get; set; } = string.Empty;
+    }
+}
